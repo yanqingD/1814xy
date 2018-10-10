@@ -1,0 +1,20 @@
+* 只要设置一次;
+** 当前项目只需要设置一次;
+1. * 告诉github工具你是谁?;
+git config --global user.name "用户名"
+git config --global user.email "邮箱名"
+报错包含 : place tell me who u are ;  没有设置好初始化名称;
+2. ** 初始化本地仓库;
+git init;
+3. git add 文件名； 把某个文件放入暂存区中;
+       -A    ； 把当前目录下所有文件都放入到暂存区之中;
+4. git status 查看暂存区的状态; 绿色 表示 工作区和暂存区代码一致;
+5. git diff 哪里发生了更改;
+6. git commit -m "一定要写注释"  在暂存区里把代码放入本地仓库产生版本;
+7. git reset --hard 版本号   版本还原;
+8. git log  查看版本号信息;
+   git reflog 查看简要版本信息;
+9. ** git remote add origin 项目路径;
+git remote 远程仓库设置; 设置成  add  名字叫做 origin（代表项目路径） 项目路径
+
+10. git push -u origin master; 本地仓库推送到远端仓库;
